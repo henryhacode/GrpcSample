@@ -1,1 +1,4 @@
 include 'CombinedProto'
+include 'Server'
+include 'Client'
+include 'SharedProto'

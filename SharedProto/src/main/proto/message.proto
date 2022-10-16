@@ -1,0 +1,25 @@
+// This file must be in the /proto directory
+syntax = "proto3";
+
+package henry;
+
+option java_multiple_files = true;
+option java_package = "henry.sample";
+option java_outer_classname = "MessageProto";
+option objc_class_prefix = "HLW";
+
+// The greeting service definition.
+service Messenger {
+  // Sends a greeting
+  rpc SayHello (MessageRequest) returns (MessageReply) {}
+}
+
+// The request message containing the user's name.
+message MessageRequest {
+  string name = 1;
+}
+
+// The response message containing the greetings
+message MessageReply {
+  string message = 1;
+}
